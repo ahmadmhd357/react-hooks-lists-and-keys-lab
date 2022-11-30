@@ -5,7 +5,8 @@ function ProjectList({ projects }) {
   // console.log(projects);
   const projectsElements = projects.map((project)=>{
     // console.log(project)
-    return <ProjectItem key={project.id} data={project} />
+    return <ProjectItem key={project.id} technologies={project.technologies} name={project.name}
+    about={project.about}/>
   })
   
   return (
